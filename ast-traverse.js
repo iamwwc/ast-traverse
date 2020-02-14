@@ -1,6 +1,6 @@
 function traverse(root, options) {
     "use strict";
-
+// 就是一个对于AST的递归遍历，对每个node调用注册的hook
     options = options || {};
     var pre = options.pre;
     var post = options.post;
